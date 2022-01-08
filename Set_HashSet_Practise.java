@@ -62,7 +62,7 @@ public class Set_Pracrtise {
         // System.out.println("removeAll : " + h.removeAll(al));
         // System.out.println(h);
 
-        Iterator itr = h.iterator();
+        Iterator itr = h.iterator(); // Return iterator of h hashset
 
     }
 
