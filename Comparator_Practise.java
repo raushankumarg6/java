@@ -11,17 +11,26 @@ class MyComparator implements Comparator
     {
         Integer I1 = (Integer) o1;
         Integer I2 = (Integer) o2;
-        if(I1 < I2)
-        {
-            return +1;
-        }
-        else if(I1 > I2) {
-            return -1;
 
-        }
-        else {
-            return 0;
-        }
+//        return I1.compareTo(I2); // Ascending order [0,10,15,20]
+//        return -I1.compareTo(I2);  // Descending order [20,15,10,0]
+//        return I2.compareTo(I1); // Descending order [20,15,10,0]
+//        return -I2.compareTo(I1); // Ascending order
+//        return  +1 ; // Insertion order & duplicates are also allowed  [10,0,15,20,20]
+//        return -1; // Reverse of insertion order [20,20,15,0,10]
+        return 0; // Only first element will be inserted and all other elements are considered as duplicates
+//        return
+//        if(I1 < I2)
+//        {
+//            return +1;
+//        }
+//        else if(I1 > I2) {
+//            return -1;
+//
+//        }
+//        else {
+//            return 0;
+//        }
     }
 }
 
@@ -36,6 +45,8 @@ public class Comparator_Practise {
         System.out.println(t);
 
     }
+
+
 
 }
 
